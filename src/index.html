@@ -7,16 +7,39 @@
     </head>
     <body>
         <div id="cabecalho">
-            <p class="texto">Olá, Bellé Supermercados</p>
-            <img src="/src/imagens/carrinho.png" id="iconeCarrinho">
+            <div id="tituloContainer">
+                <h1 id="tituloLista">Listagem de Produtos</h1>
+            </div>
+            <div id="infoUsuario">
+                <p class="texto">Olá, Bellé Supermercados</p>
+                <img src="/src/imagens/carrinho.png" id="iconeCarrinho">
+            </div>
         </div>
         <main>
-            <div id="adicionarProduto" class="adicionarEremover">
+            <div id="adicionarProduto">
                 <img src="/src/imagens/adicionarItem.png" id="maisProduto">
             </div>
-            <div id="removerProduto">
-                <img id="menosProduto">
-            </div>
         </main>
+        <div id="listagemProdutos">
+            <table id="tabelaProdutos">
+                <thead class="cabecalhoTabela">
+                    <tr>
+                      <th class="cabecalhoTabela">Produto</th>
+                      <th class="cabecalhoTabela">Quantidade</th>
+                      <th class="cabecalhoTabela">Valor</th>
+                      <th class="cabecalhoTabela">Categoria</th>
+                    </tr>
+                </thead>
+                <tbody class="bordaCelulasProduto">
+                    <tr>
+                      <td class="bordaCelulasProduto">Arroz Bom Bocado</td>
+                      <td class="bordaCelulasProduto">150kg</td>
+                      <td class="bordaCelulasProduto">R$ 20,00/kg</td>
+                      <td class="bordaCelulasProduto">grão de cereal</td>  
+                      <img src="/src/imagens/lata de lixo cinza.png" id="excluirProduto">
+                    </tr>      
+            </table>
+        </div>
+        <script src="./frontEnd.js"></script>
     </body>
 </html>
