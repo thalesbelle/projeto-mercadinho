@@ -12,34 +12,42 @@
             </div>
             <div id="infoUsuario">
                 <p class="texto">Olá, Bellé Supermercados</p>
-                <img src="/src/imagens/carrinho.png" id="iconeCarrinho">
+                <img src="./imagens/carrinho.png" id="iconeCarrinho">
             </div>
         </div>
-        <main>
-            <div id="adicionarProduto">
-                <img src="/src/imagens/adicionarItem.png" id="maisProduto">
+        <section id="pai">
+            <main>
+                <div class="adicionarProduto">
+                    <img src="./imagens/adicionarItem branco.png" id="maisProduto">
+                </div>
+                <div id="relatorioAdicionar">
+    
+                </div>
+            </main>
+            <div id="listagemProdutos">
+                <table id="tabelaProdutos">
+                    <thead class="cabecalhoTabela">
+                        <tr>
+                          <th class="cabecalhoTabela">Produto</th>
+                          <th class="cabecalhoTabela">Quantidade</th>
+                          <th class="cabecalhoTabela">Valor</th>
+                          <th class="cabecalhoTabela">Categoria</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bordaCelulasProduto">
+                        <tr>
+                          <td class="bordaCelulasProduto">Arroz Bom Bocado</td>
+                          <td class="bordaCelulasProduto">150kg</td>
+                          <td class="bordaCelulasProduto">R$ 20,00/kg</td>
+                          <td class="bordaCelulasProduto">grão de cereal</td>  
+                          <img src="./imagens/lata de lixo cinza.png" id="excluirProduto">
+                          <img src="./imagens/editar cinza.png" id="editarProduto">
+                        </tr>      
+                </table>
             </div>
-        </main>
-        <div id="listagemProdutos">
-            <table id="tabelaProdutos">
-                <thead class="cabecalhoTabela">
-                    <tr>
-                      <th class="cabecalhoTabela">Produto</th>
-                      <th class="cabecalhoTabela">Quantidade</th>
-                      <th class="cabecalhoTabela">Valor</th>
-                      <th class="cabecalhoTabela">Categoria</th>
-                    </tr>
-                </thead>
-                <tbody class="bordaCelulasProduto">
-                    <tr>
-                      <td class="bordaCelulasProduto">Arroz Bom Bocado</td>
-                      <td class="bordaCelulasProduto">150kg</td>
-                      <td class="bordaCelulasProduto">R$ 20,00/kg</td>
-                      <td class="bordaCelulasProduto">grão de cereal</td>  
-                      <img src="/src/imagens/lata de lixo cinza.png" id="excluirProduto">
-                    </tr>      
-            </table>
-        </div>
+        </section>
+        
         <script src="./frontEnd.js"></script>
+        <script src="/index.js"></script>
     </body>
 </html>
